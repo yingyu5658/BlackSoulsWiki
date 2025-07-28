@@ -1,28 +1,29 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "BlackSoulsWiki",
-  description: "🚀 BlackSouls的文档、攻略、资源引导... ",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    title: "BlackSoulsWiki",
+    description: "🚀 BlackSouls的文档、攻略、资源引导... ",
+    themeConfig: {
+        logo: "/static/logo.png",
+        nav: [
+            { text: "Home", link: "/" },
+        ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+        sidebar: [
+            {
+                text: "流程",
+                items: [
+                    { text: "开始", link: "/doc/getting-start" },
+                ],
+            },
+        ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+        socialLinks: [
+            {
+                icon: "github",
+                link: "https://github.com/yingyu5658/BlackSoulsWiki",
+            },
+        ],
+    },
+});
